@@ -3,7 +3,10 @@ import Ticket from "./Ticket";
 
 function TicketList(){
     return (
-        <Ticket />
+        <Ticket 
+            location="3A"
+            names="Amy and Brigitte"
+            issue="Just checking in."/>
     );
 }
 

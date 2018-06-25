@@ -1,11 +1,10 @@
 import React from "react";
 
-function Ticket(){
+function Ticket(props){
     return (
         <div>
-            <h3>3a</h3>
-            <h3>Amy and Brigitte</h3>
-            <p><em>Just checking in.</em></p>
+            <h3>{props.location} - {props.names}</h3>
+            <p><em>{props.issue}</em></p>
             <hr/>
         </div>
     );
