@@ -13,14 +13,9 @@
 // setInterval(liveTime, 1000);
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/App";
 // --- help queue ---
 ReactDOM.render(
-    <div>
-        <h1>Help Queue</h1>
-        <h2>{new Date().toLocaleTimeString()}</h2>
-        <h3>3a</h3>
-        <h3>Amy and Brigitte</h3>
-        <p><em>Just checking in.</em></p>
-    </div>,
+    <App/>,
     document.getElementById('react-app-root')
 );
