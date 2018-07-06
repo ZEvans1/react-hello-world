@@ -11,9 +11,9 @@
 // }
 
 // setInterval(liveTime, 1000);
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
 import { AppContainer } from 'react-hot-loader';
 // --- help queue ---
 const render = (Component) => {
@@ -26,9 +26,10 @@ const render = (Component) => {
 };
 
 render(App);
-
+/*eslint-disable */
 if (module.hot) {
-    module.hot.accept('./components/App', () => {
-        render(App)
-    });
+  module.hot.accept('./components/App', () => {
+    render(App);
+  });
 }
+/*eslint-disable */
